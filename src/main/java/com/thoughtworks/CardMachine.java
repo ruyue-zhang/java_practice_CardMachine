@@ -23,12 +23,6 @@ public class CardMachine {
         return n;
     }
 
-    private void printResultCard(ArrayList<String> resultCard) {
-        for (String s : resultCard) {
-            System.out.print(s + " ");
-        }
-    }
-
     public void drawCard(ArrayList<String> card) {
         ArrayList<String> resultCard = new ArrayList<>();
         int n = getInput();
@@ -37,7 +31,9 @@ public class CardMachine {
             int index = r.nextInt(52 - i);
             resultCard.add(card.remove(index));
         }
-        printResultCard(resultCard);
+        for (String s : resultCard) {
+            System.out.print(s + " ");
+        }
     }
 }
 
