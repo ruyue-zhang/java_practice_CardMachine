@@ -17,7 +17,7 @@ public class App {
     ArrayList<String> card = new ArrayList<>();
     for (String s : pattern) {
       for (String value : number) {
-        card.add(s + " " + value);
+        card.add(s + value);
       }
     }
     return card;
