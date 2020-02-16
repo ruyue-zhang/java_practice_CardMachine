@@ -1,11 +1,12 @@
 package com.thoughtworks;
 
 import java.util.ArrayList;
+import java.util.Random;
 
 public class App {
 
   public static void main(String[] args) {
-      Card card = new Card(createCard());
+    Card card = new Card(createCard());
 
   }
 
