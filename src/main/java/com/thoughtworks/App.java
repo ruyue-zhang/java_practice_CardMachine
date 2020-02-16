@@ -7,7 +7,8 @@ public class App {
 
   public static void main(String[] args) {
     Card card = new Card(createCard());
-
+    CardMachine cardMachine = new CardMachine();
+    cardMachine.drawCard(card.getCard());
   }
 
   public static ArrayList<String> createCard() {
